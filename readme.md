@@ -1,7 +1,6 @@
 # Реализация ПК Специалист 
-для отладочной платы AX4010 ALINX
 
-Основано на [specialist-wxeda](https://github.com/andykarpov/specialist-wxeda)
+Реализация для отладочной платы AX4010 ALINX, основана на [specialist-wxeda](https://github.com/andykarpov/specialist-wxeda).
 
 
 ### Для загрузки программы с SD
