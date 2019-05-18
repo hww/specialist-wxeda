@@ -1,16 +1,7 @@
-# Реализация ПК Специалист для отладочной платы AX4010 ALINX
+# Реализация ПК Специалист 
+для отладочной платы AX4010 ALINX
 
-
-Основана на версии **specIvaGor250215** для Altera DE1, автор **ivagor (Иван Городецкий)**,
----
-**Spetsialist_MX_FPGA beta version (31.01.2012)**, Авторы: **Fifan (Виталий Онуфрович), Ewgeny7 (Евгений Иванов), HardWareMan (Игорь Внуков)**
- [www.zx.pk.ru](http://www.zx.pk.ru), [www.spetsialist-mx.ru](http://www.spetsialist-mx.ru)
-
-Использована реализация ("хард" и софт) работы с SD **Дмитрия Целикова (b2m)** [bashkiria-2m.narod.ru](http://bashkiria-2m.narod.ru/)
-
-Использованный PAL-кодер базируется на проекте vector06cc [vector06cc](https://code.google.com/p/vector06cc/)
-**Вячеслава Славинского ([svofski](http://sensi.org/~svo)) **
----
+Основано на [specialist-wxeda](https://github.com/andykarpov/specialist-wxeda)
 
 
 ### Для загрузки программы с SD
