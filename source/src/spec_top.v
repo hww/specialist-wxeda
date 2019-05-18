@@ -129,9 +129,6 @@ spec(
         .ram_oe(oe_n),
         .ram_we(we_n),
 		  .sdRd(sd_o),
-
-//			.led_red(LEDR[0]),
-//        .led_green(LEDG[0]),
 		  .reset_n(reset_n)
 );
 
