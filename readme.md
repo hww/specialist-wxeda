@@ -2,6 +2,7 @@
 
 Реализация для отладочной платы AX4010 ALINX, основана на [specialist-wxeda](https://github.com/andykarpov/specialist-wxeda).
 
+![AX4010.jpg](/docs/AX4010.jpg)
 
 ### Для загрузки программы с SD
 
