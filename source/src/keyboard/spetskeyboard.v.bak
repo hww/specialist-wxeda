@@ -43,7 +43,7 @@ reg res_key;
 assign res_k = ~res_key;                                                                                                                                                      
                                                                                                                                                                           
 always @(posedge clk) begin                                                                                                                                          
-        if (hardware_keys[0] && res_cnt==4'd14)                                                                                                                                   
+        if (hardware_keys[3] && res_cnt==4'd14)                                                                                                                                   
                 res_key <= 1'b1;                                                                                                                                          
         else begin                                                                                                                                                        
                 res_key <= 1'b0;                                                                                                                                          

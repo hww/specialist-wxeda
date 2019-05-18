@@ -5,9 +5,9 @@ module spec_top(
 			////////////////////	Clock Input	 	////////////////////	 
 		clk48mhz,						//	50 MHz
 		////////////////////	Push Button		////////////////////
-		KEY,								//	Pushbutton[3:0]
+		KEY,							//	Pushbutton[3:0]
 		/////////////////////	SDRAM Interface		////////////////
-		DRAM_DQ,							//	SDRAM Data bus 16 Bits
+		DRAM_DQ,						//	SDRAM Data bus 16 Bits
 		DRAM_ADDR,						//	SDRAM Address bus 12 Bits
 		DRAM_LDQM,						//	SDRAM Low-byte Data Mask 
 		DRAM_UDQM,						//	SDRAM High-byte Data Mask
@@ -21,7 +21,7 @@ module spec_top(
 		DRAM_CKE,						//	SDRAM Clock Enable
 		////////////////////	SD_Card Interface	////////////////
 		SD_DAT,							//	SD Card Data
-		SD_DAT3,							//	SD Card Data 3
+		SD_DAT3,						//	SD Card Data 3
 		SD_CMD,							//	SD Card Command Signal
 		SD_CLK,							//	SD Card Clock
 		////////////////////	PS2		////////////////////////////
@@ -32,7 +32,7 @@ module spec_top(
 		VGA_VS,							//	VGA V_SYNC
 		VGA_R,   						//	VGA Red[3:0]
 		VGA_G,	 						//	VGA Green[3:0]
-		VGA_B,  							//	VGA Blue[3:0]
+		VGA_B,  						//	VGA Blue[3:0]
 
 		BEEP							// BEEPER
 	);
@@ -45,7 +45,7 @@ input	[3:0]	KEY;					//	Pushbutton[3:0]
 reg	[9:0]	SW;						//	Toggle Switch[9:0]
 ///////////////////////		SDRAM Interface	////////////////////////
 inout	[15:0]	DRAM_DQ;				//	SDRAM Data bus 16 Bits
-output	[12:0]	DRAM_ADDR;				//	SDRAM Address bus 12 Bits
+output	[11:0]	DRAM_ADDR;				//	SDRAM Address bus 12 Bits
 output			DRAM_LDQM;				//	SDRAM Low-byte Data Mask 
 output			DRAM_UDQM;				//	SDRAM High-byte Data Mask
 output			DRAM_WE_N;				//	SDRAM Write Enable
@@ -188,11 +188,7 @@ assign VGA_R=tvmode[0]?tv_cvbs[4:1]:tvmode[1]?tv_Pr:red;
 assign VGA_G=tvmode[0]?tv_luma[4:1]:tvmode[1]?tv_Y:green;
 assign VGA_B=tvmode[0]?tv_chroma_o[4:1]:tvmode[1]?tv_Pb:blue;
 
-always @(posedge clk64 or posedge reset) begin
-	if (reset) begin
-		SW <= 0;
-	end
-end
+
 
 ////////////////////   SD CARD   ////////////////////
 reg sdcs;
