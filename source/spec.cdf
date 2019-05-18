@@ -1,10 +1,10 @@
-/* Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition */
+/* Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition */
 JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6E22) Path("/media/sf_Projects/Retrocomp/SpecialistMX/specialist-mx-wxeda/source/") File("spec.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE10F17) Path("D:/Quartus/specialist-wxeda/source/") File("spec.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
